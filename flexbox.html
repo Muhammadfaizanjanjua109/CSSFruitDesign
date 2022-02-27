@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Responsive Design Pattern</title>
+</head>
+<style>
+    @media screen and (max-width:660px) {
+         .navbar,.maincon{
+            flex-direction: column;
+        }
+    }
+    .fakepic{
+        background-color: darkgrey;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .row{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flexbleLayout{
+        text-align: center;
+        flex: 100%;
+        background-color: cadetblue;
+    }
+    .navbar{
+        display: flex;
+        flex: 100%;
+        background-color: aqua;
+    }
+    .navbar > a{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+       
+
+    }
+    .maincon{
+     display: flex;
+       
+    }
+    .aside{
+        padding: 10px;
+    flex:30%;
+    background-color: blueviolet;
+    }
+    .main{
+        padding: 10px;
+        text-align: center;
+        flex:70%;
+        background-color: brown;
+    }
+    .footer{
+        text-align: center;
+        background-color: antiquewhite;
+        flex:100%;
+    }
+</style>
+<body>
+ <div class="row">
+     <div class="flexbleLayout">
+         <h1>My Website</h1>
+         <p>With a Flexible layout</p>
+     </div>
+     <div class="navbar">
+         <a href="">Link</a>
+         <a href="">Link</a>
+         <a href="">Link</a>
+         <a href="">Link</a>
+     </div>
+     <div class="maincon">
+        <div class="aside">
+            <h1>About ME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi obcaecati corrupti veritatis corporis vero nobis inventore mollitia molestiae impedit illo beatae deleniti distinctio dicta nihil facere soluta, veniam quos quis! Quaerat, aliquid? Maxime soluta esse saepe! Doloribus quibusdam illo, sit aliquam repudiandae numquam harum soluta suscipit? Sint eum veniam necessitatibus accusantium, debitis at ab sequi tenetur earum. Inventore delectus, ut aliquid voluptas atque perspiciatis alias qui ex placeat, quidem eveniet, et odio facere corrupti. Porro repellat autem, architecto eum expedita laboriosam suscipit, soluta, quidem modi voluptates necessitatibus eaque quia! Ipsa id error ad hic unde delectus pariatur veritatis tenetur.</p>
+           <div class="fakepic"  style="height: 200px;">Image</div>
+           <div class="fakepic"  style="height: 200px;">Image</div>
+           <div class="fakepic"  style="height: 200px;">Image</div>
+           </div>
+        
+        <div class="main">
+            <h1>Tittle Heading</h1>
+            <h5>tittle Description , Dec 7, 2017</h5>
+            <div class="fakepic"  style="height: 500px;">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis corporis asperiores rem aperiam minus magnam praesentium harum, ab officiis autem voluptas beatae, accusamus cumque provident perferendis hic similique temporibus! Atque corrupti a quaerat, reiciendis similique ad, fugiat illum quidem in deserunt, animi itaque deleniti? Voluptatem deleniti quae consequatur ipsum?</p>
+            <div class="fakepic"  style="height: 300px;">Image</div>
+        </div>
+     </div>
+     <div class="footer">
+         <h1>this is footer</h1>
+     </div>
+ </div>
+</body>
+</html>
